@@ -9,6 +9,7 @@ const Paragraph = ({ children }: ParagraphProps) => {
   const Paragraph = styled.p`
     font-size: 16px;
     margin-bottom: 20px;
+    margin-left: 5px;
     color: #616161;
     @media (max-width: 768px) {
       margin-bottom: 15 px;
