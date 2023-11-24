@@ -51,10 +51,26 @@ const LoginForm = () => {
         <FormDiv>
           <Header>Регистрация</Header>
           <Paragraph>Пожалуйста заполните все поля:</Paragraph>
-          <InputField type="text" placeholder="Имя пользователя" />
-          <InputField type="email" placeholder="Электронная почта" />
-          <InputField type="password" placeholder="Пароль" />
-          <InputField type="password" placeholder="Повторите пароль" />
+          <InputField
+            type="text"
+            autocomplete="username"
+            placeholder="Имя пользователя"
+          />
+          <InputField
+            type="email"
+            autocomplete="email"
+            placeholder="Электронная почта"
+          />
+          <InputField
+            type="password"
+            autocomplete="new-password"
+            placeholder="Пароль"
+          />
+          <InputField
+            type="password"
+            autocomplete="new-password"
+            placeholder="Повторите пароль"
+          />
           <CheckBoxDiv>
             <CheckBoxInput type="checkbox" />
             <Paragraph>
