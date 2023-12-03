@@ -5,12 +5,13 @@ interface CheckBoxWrapperProps {
   children: React.ReactNode;
 }
 
+const StyledCheckBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const CheckBoxWrapper = ({ children }: CheckBoxWrapperProps) => {
-  const CheckBoxWrapper = styled.div`
-    display: flex;
-    align-items: center;
-  `;
-  return <CheckBoxWrapper>{children}</CheckBoxWrapper>;
+  return <StyledCheckBox>{children}</StyledCheckBox>;
 };
 
 export default CheckBoxWrapper;

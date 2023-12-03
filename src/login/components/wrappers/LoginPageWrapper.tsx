@@ -5,16 +5,17 @@ interface LoginPageWrapperProps {
   children: React.ReactNode;
 }
 
+const StyledLoginPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+`;
+
 const LoginPageWrapper = ({ children }: LoginPageWrapperProps) => {
-  const LoginPageWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-  `;
-  return <LoginPageWrapper>{children}</LoginPageWrapper>;
+  return <StyledLoginPage>{children}</StyledLoginPage>;
 };
 
 export default LoginPageWrapper;
