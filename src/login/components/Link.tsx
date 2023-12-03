@@ -6,15 +6,16 @@ interface LinkProps {
   href?: string;
 }
 
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: #885043;
+  font-size: 16px;
+  margin-bottom: 20px;
+  align-self: flex-end;
+`;
+
 const Link = (props: LinkProps) => {
-  const Link = styled.a`
-    text-decoration: none;
-    color: #885043;
-    font-size: 16px;
-    margin-bottom: 20px;
-    align-self: flex-end;
-  `;
-  return <Link href={props.href}>{props.children}</Link>;
+  return <StyledLink href={props.href}>{props.children}</StyledLink>;
 };
 
 export default Link;
