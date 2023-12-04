@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 interface InputFieldProps {
   type?: string;
-  autocomplete?: string;
   placeholder?: string;
 }
 
@@ -21,13 +20,7 @@ const InputField = (props: InputFieldProps) => {
       margin-bottom: 20px;
     }
   `;
-  return (
-    <InputField
-      type={props.type}
-      autoComplete={props.autocomplete}
-      placeholder={props.placeholder}
-    />
-  );
+  return <InputField type={props.type} placeholder={props.placeholder} />;
 };
 
 export default InputField;
