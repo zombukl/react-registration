@@ -6,9 +6,8 @@ interface CheckBoxInputProps {
 
 const CheckBoxInput = (props: CheckBoxInputProps) => {
   const CheckBoxInput = styled.input`
-    width: 13px;
+    width: 20px;
     accent-color: #885043;
-    margin-bottom: 10px;
   `;
   return <CheckBoxInput type={props.type} />;
 };
