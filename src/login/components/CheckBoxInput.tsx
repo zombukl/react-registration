@@ -4,14 +4,13 @@ interface CheckBoxInputProps {
   type?: string;
 }
 
-const StyledCheckBoxInput = styled.input`
-  width: 13px;
-  accent-color: #885043;
-  margin-bottom: 10px;
-`;
-
 const CheckBoxInput = (props: CheckBoxInputProps) => {
-  return <StyledCheckBoxInput type={props.type} />;
+  const CheckBoxInput = styled.input`
+    width: 13px;
+    accent-color: #885043;
+    margin-bottom: 10px;
+  `;
+  return <CheckBoxInput type={props.type} />;
 };
 
 export default CheckBoxInput;
