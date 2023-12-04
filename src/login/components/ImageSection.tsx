@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import loginImage from '../../assets/Picture.svg';
 
 const ImageSection = () => {
-  const ImageSection = styled.img`
+  const ImageSection = styled.div`
+    background-image: url(${loginImage});
+    background-size: cover;
     width: 50%;
     height: 100%;
     border-top-left-radius: 10px;
@@ -11,7 +13,7 @@ const ImageSection = () => {
       display: none;
     }
   `;
-  return <ImageSection loading="lazy" src={loginImage} alt="" />;
+  return <ImageSection />;
 };
 
 export default ImageSection;
