@@ -6,6 +6,7 @@ import Link from './components/Link';
 import Header from './components/Header';
 import Paragraph from './components/Paragraph';
 import CheckBoxInput from './components/CheckBoxInput';
+import Label from './components/Label';
 
 const LoginForm = () => {
   const MainDiv = styled.div`
@@ -56,10 +57,10 @@ const LoginForm = () => {
           <InputField type="password" placeholder="Пароль" />
           <InputField type="password" placeholder="Повторите пароль" />
           <CheckBoxDiv>
-            <CheckBoxInput type="checkbox" />
-            <Paragraph>
-              Agree to <Link>Terms and Conditions</Link>
-            </Paragraph>
+            <Label>
+              <CheckBoxInput type="checkbox" />
+              Agree to <Link href="#">Terms and Conditions</Link>
+            </Label>
           </CheckBoxDiv>
           <FormButton colored={true}>Регистрация</FormButton>
         </FormDiv>
