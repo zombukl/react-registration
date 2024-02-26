@@ -5,17 +5,16 @@ interface HeaderProps {
   children: React.ReactNode;
 }
 
-const StyledHeader = styled.h1`
-  font-size: 28px;
-  @media (max-width: 931px) {
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-`;
-
 const Header = ({ children }: HeaderProps) => {
-  return <StyledHeader>{children}</StyledHeader>;
+  const Header = styled.h1`
+    font-size: 28px;
+    @media (max-width: 931px) {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  `;
+  return <Header>{children}</Header>;
 };
 
 export default Header;
